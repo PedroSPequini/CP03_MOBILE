@@ -86,3 +86,9 @@ npx expo start
 4. Salva → dados vão para o **Context API**
 5. Na **Tela de Perfil**, os dados aparecem formatados
 6. Na **Tela de Dev**, aparecem as informações do desenvolvedor
+
+---
+
+ ## 🎥 Demonstração em Vídeo
+
+[▶️ Assistir à demonstração do projeto](https://youtube.com/shorts/c3NlkBUCox8)
