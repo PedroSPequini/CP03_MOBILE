@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "CP3-Mobile",
+    "slug": "cp3-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0f0f13"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Usado para capturar foto de perfil do aluno."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0f0f13"
+      },
+      "permissions": ["CAMERA"]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Permitir acesso à câmera para capturar sua foto de perfil."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Permitir acesso à câmera para capturar sua foto de perfil."
+        }
+      ]
+    ]
+  }
+}

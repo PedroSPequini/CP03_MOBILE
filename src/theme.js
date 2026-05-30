@@ -1,0 +1,133 @@
+import { StyleSheet } from 'react-native';
+
+export const colors = {
+  bg: '#0f0f13',
+  surface: '#1a1a22',
+  card: '#22222e',
+  accent: '#6c63ff',
+  accentLight: '#8b85ff',
+  accentDim: 'rgba(108,99,255,0.15)',
+  text: '#f0f0f8',
+  muted: '#8888aa',
+  border: 'rgba(255,255,255,0.08)',
+  success: '#4ade80',
+  error: '#f87171',
+  warning: '#fbbf24',
+};
+
+export const shared = StyleSheet.create({
+  screen: {
+    flex: 1,
+    backgroundColor: colors.bg,
+  },
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    paddingHorizontal: 20,
+    paddingTop: 16,
+    paddingBottom: 14,
+    backgroundColor: colors.surface,
+    borderBottomWidth: 1,
+    borderBottomColor: colors.border,
+  },
+  accentBar: {
+    width: 8,
+    height: 32,
+    borderRadius: 4,
+  },
+  headerTitle: {
+    fontSize: 22,
+    fontWeight: '700',
+    color: colors.text,
+  },
+  headerSub: {
+    fontSize: 13,
+    color: colors.muted,
+    marginTop: 2,
+  },
+  body: {
+    padding: 20,
+  },
+  label: {
+    fontSize: 11,
+    fontWeight: '600',
+    color: colors.muted,
+    marginBottom: 6,
+    letterSpacing: 0.8,
+    textTransform: 'uppercase',
+  },
+  input: {
+    backgroundColor: colors.card,
+    borderWidth: 1,
+    borderColor: colors.border,
+    borderRadius: 12,
+    paddingHorizontal: 14,
+    paddingVertical: 12,
+    color: colors.text,
+    fontSize: 15,
+  },
+  group: {
+    marginBottom: 14,
+  },
+  row: {
+    flexDirection: 'row',
+    gap: 12,
+  },
+  card: {
+    backgroundColor: colors.card,
+    borderRadius: 16,
+    padding: 16,
+    borderWidth: 1,
+    borderColor: colors.border,
+    marginBottom: 12,
+  },
+  btn: {
+    backgroundColor: colors.accent,
+    borderRadius: 14,
+    paddingVertical: 14,
+    paddingHorizontal: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  btnText: {
+    color: '#fff',
+    fontSize: 15,
+    fontWeight: '600',
+    letterSpacing: 0.3,
+  },
+  btnOutline: {
+    backgroundColor: 'transparent',
+    borderWidth: 1.5,
+    borderColor: colors.accent,
+  },
+  btnOutlineText: {
+    color: colors.accentLight,
+    fontSize: 15,
+    fontWeight: '600',
+  },
+  badge: {
+    backgroundColor: colors.accentDim,
+    paddingHorizontal: 8,
+    paddingVertical: 2,
+    borderRadius: 6,
+    alignSelf: 'flex-start',
+  },
+  badgeText: {
+    color: colors.accentLight,
+    fontSize: 11,
+    fontWeight: '700',
+    letterSpacing: 0.5,
+  },
+  avatar: {
+    width: 90,
+    height: 90,
+    borderRadius: 45,
+    borderWidth: 3,
+    borderColor: colors.accent,
+    backgroundColor: colors.card,
+    overflow: 'hidden',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
